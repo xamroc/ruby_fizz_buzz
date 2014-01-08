@@ -1,13 +1,14 @@
 def fizzbuzz(n)
-	if n % 3 == 0 && n % 5 == 0
-		puts "Fizz Buzz! "
-	elsif n % 3 == 0
-		puts "Fizz! "
-	elsif n % 5 == 0
-		puts "Buzz! "
-	else
-		puts "#{n} "
-	end	
+  case
+  when n % 3 == 0 && n % 5 == 0
+    puts "Fizz Buzz! "
+  when n % 3 == 0
+    puts "Fizz! "
+  when n % 5 == 0
+    puts "Buzz! "
+  else
+    puts "#{n} "
+  end
 end
 
 puts "Enter start of range:"
